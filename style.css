@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align:center;
+	background-color:black;
+
+}
+
+h1 {
+	color:green;
+}
+
+span {
+	color:red;
+}
+
+.description-text {
+	color:green;
+	font-size:30px;
+	margin-top:10px;
+}
+
+.container {
+	display:inline-block;
+	width:800px;
+	height:600px;
+	background-color:green;
+	border-radius:20px;
+}
+
+.row1 {
+	display:flex;
+	justify-content: space-around;
+	width:760px;
+	height:100px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.choice1, .choice2, .choice3 {
+	position:relative;
+	width:100px;
+	height:100%;
+	background-color:black;
+	border-radius:10px;
+}
+
+.choice1:hover, .choice2:hover, .choice3:hover {
+	cursor:pointer;
+}
+
+.row2 {
+	justify-content: space-around;
+	display:flex;
+	width:760px;
+	height:340px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:black;
+	border-radius:15px;
+}
+
+.player-choice {
+	position:relative;
+	width:350px;
+	height:100%;
+	border-radius:12px;
+}
+
+.rng-choice {
+	position:relative;
+	width:350px;
+	height:100%;
+	border-radius:12px;
+}
+
+.choice1 img, .choice2 img, .choice3 img {
+	position:absolute;
+	width:100px;
+	height:100px;
+	left:0;
+}
+
+.player-choice img {
+	position:absolute;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rng-choice img {
+	position:absolute;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#win-text, #lose-text, #even-text {
+	display:none;
+	margin:0px;
+	margin-top:10px;
+	font-size:80px;
+	height:80px;
+}
+
+.win-counter {
+	float:left;
+	margin-left:60px;
+	width:100px;
+	height:240px;
+	background-color:green;
+	margin-bottom:20px;
+	border-radius:10px;
+}
+
+.loss-counter {
+	float:right;
+	border-radius:10px;
+	margin-right:60px;
+	float:center;
+	width:100px;
+	height:240px;
+	background-color:green;
+	margin-bottom:20px;
+}
+
+.desc {
+	font-size:30px;
+}
+
+#win-value, #loss-value {
+	font-size:60px;
+}
+
+
+/*ispod ce menjati JS*/
+
+#user-papir {
+	display:none;
+}
+
+#user-kamen {
+	display:none;
+}
+
+#user-makaze {
+	display:none;
+}
+
+#rng-papir {
+	display:none;
+}
+
+#rng-kamen {
+	display:none;
+}
+
+#rng-makaze {
+	display:none;
+}

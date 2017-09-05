@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<title>Papir, kamen, makaze!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>
+		Pick your weapon ><span>:</span>)
+	</h1>
+	<div class="win-counter">
+		<p class="desc">
+			Wins
+		</p>
+		<p id="win-value">
+			0
+		</p>
+	</div>
+	<div class="loss-counter">
+		<p class="desc">
+			Losses
+		</p>
+		<p id="loss-value">
+			0
+		</p>
+	</div>
+	<div class="container">
+		<div class="row1">
+			<div class="choice1" onClick='papir(), prikaziPapir()'>
+				<img src="images/paper.png" alt="papir">
+			</div>
+			<div class="choice2" onClick='kamen(), prikaziKamen()'>
+				<img src="images/rock.png" alt="kamen">
+			</div>
+			<div class="choice3" onClick='makaze(), prikaziMakaze()'>
+				<img src="images/scissors.png" alt="makaze">
+			</div>
+		</div><!-- row1 ends -->
+		<div class="row2 outcome">
+			<div class="player-choice">
+				<p class="description-text">Your choice.</p>
+				<img src="images/paper.png" alt="papir" id="user-papir">
+				<img src="images/rock.png" alt="kamen" id="user-kamen">
+				<img src="images/scissors.png" alt="makaze" id="user-makaze">
+			</div>
+			<div class="rng-choice">
+				<p class="description-text">Evil cyborg's choice.</p>
+				<img src="images/paper.png" alt="papir" id="rng-papir">
+				<img src="images/rock.png" alt="kamen" id="rng-kamen">
+				<img src="images/scissors.png" alt="makaze" id="rng-makaze">
+			</div>
+		</div><!-- row2 ends -->
+		<div class="row3">
+			<p id="win-text">
+				You WIN!
+			</p>
+			<p id="lose-text">
+				You LOSE! ><span>:</span>D
+			</p>
+			<p id="even-text">
+				It's even. Boring.
+			</p>
+		</div>
+	</div><!-- container ends -->
+	<!-- JS, always bottom of body -->
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
